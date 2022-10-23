@@ -1,26 +1,42 @@
 {
   "name": "smplphp/composer-local-package-repository",
   "description": "A composer plugin to provide a local package repository",
+  "minimum-stability": "stable",
+  "license": "MIT",
   "type": "composer-plugin",
+  "authors": [
+    {
+      "name": "Ollie Read",
+      "email": "smpl@ollie.codes"
+    }
+  ],
   "require": {
     "php": "^8.0",
     "composer-plugin-api": "^2.3"
   },
   "require-dev": {
-    "composer/composer": "^2.4"
+    "composer/composer": "^2.4",
+    "phpunit/phpunit": "^9.0",
+    "sempro/phpunit-pretty-print": "^1.4",
+    "vimeo/psalm": "^4.21",
+    "phpstan/phpstan": "^1.4",
+    "infection/infection": "^0.26.9"
   },
-  "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Smplphp\\Composer\\LocalPackages\\": "src/"
+      "Smpl\\Utils\\": "src/"
     }
   },
-  "authors": [
-    {
-      "name": "Ollie",
-      "email": "code@ollie.codes"
+  "autoload-dev": {
+    "psr-4": {
+      "Smpl\\Utils\\Tests\\": "tests/"
     }
-  ],
+  },
+  "config": {
+    "allow-plugins": {
+      "infection/extension-installer": true
+    }
+  },
   "extra": {
     "class": "Smplphp\\Composer\\LocalPackages\\LocalPackageRepositoryPlugin"
   }

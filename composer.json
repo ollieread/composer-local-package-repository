@@ -1,0 +1,27 @@
+{
+  "name": "smplphp/composer-local-package-repository",
+  "description": "A composer plugin to provide a local package repository",
+  "type": "composer-plugin",
+  "require": {
+    "php": "^8.0",
+    "composer-plugin-api": "^2.3"
+  },
+  "require-dev": {
+    "composer/composer": "^2.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Smplphp\\Composer\\LocalPackages\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Ollie",
+      "email": "code@ollie.codes"
+    }
+  ],
+  "extra": {
+    "class": "Smplphp\\Composer\\LocalPackages\\LocalPackageRepositoryPlugin"
+  }
+}

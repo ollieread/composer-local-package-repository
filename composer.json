@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Smpl\\Utils\\": "src/"
+      "Smplphp\\Composer\\LocalPackages\\": "src/"
     }
   },
   "autoload-dev": {

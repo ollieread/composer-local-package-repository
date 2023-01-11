@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Smplphp\Composer\LocalPackages;
+namespace Ollieread\Composer\LocalPackages;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;

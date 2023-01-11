@@ -1,5 +1,5 @@
 {
-  "name": "smplphp/composer-local-package-repository",
+  "name": "ollieread/composer-local-package-repository",
   "description": "A composer plugin to provide a local package repository",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "authors": [
     {
       "name": "Ollie Read",
-      "email": "smpl@ollie.codes"
+      "email": "packages@ollie.codes"
     }
   ],
   "require": {
@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Smplphp\\Composer\\LocalPackages\\": "src/"
+      "Ollieread\\Composer\\LocalPackages\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Smpl\\Utils\\Tests\\": "tests/"
+      "Ollieread\\Composer\\LocalPackages\\Tests\\": "tests/"
     }
   },
   "config": {
@@ -38,6 +38,6 @@
     }
   },
   "extra": {
-    "class": "Smplphp\\Composer\\LocalPackages\\LocalPackageRepositoryPlugin"
+    "class": "Ollieread\\Composer\\LocalPackages\\LocalPackageRepositoryPlugin"
   }
 }
